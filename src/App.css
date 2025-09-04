@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+  background: #f0f2f5; /* light background */
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* gradient */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

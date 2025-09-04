@@ -1,4 +1,4 @@
-package com.example.updateapp;
+package com.example.updateapp.plugin;
 
 import android.content.Intent;
 import android.net.Uri;
