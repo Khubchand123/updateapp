@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.util.Log;
 import com.getcapacitor.BridgeActivity;
 import com.example.updateapp.plugin.ApkUpdaterPlugin;
-
+//import android.content.pm.PackageInfo;
+//import android.content.pm.PackageManager;
+//import android.widget.Toast;
 public class MainActivity extends BridgeActivity {
     private static final String TAG = "MainActivity";
 
@@ -19,4 +21,18 @@ public class MainActivity extends BridgeActivity {
 
         super.onCreate(savedInstanceState);
     }
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//
+//        try {
+//            PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+//            String versionName = pInfo.versionName;
+//            int versionCode = pInfo.versionCode;
+//            Toast.makeText(this, "Current Version: " + versionName + " (" + versionCode + ")", Toast.LENGTH_LONG).show();
+//        } catch (PackageManager.NameNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
